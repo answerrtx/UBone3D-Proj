@@ -1,0 +1,76 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.publication-title {
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.publication-authors {
+  font-family: 'Google Sans', sans-serif;
+  margin-top: 1rem;
+}
+
+.publication-authors .author-block {
+  display: inline-block;
+  margin: 0 0.35rem;
+}
+
+.publication-authors a {
+  color: #3273dc;
+}
+
+.publication-authors a:hover {
+  text-decoration: underline;
+}
+
+.publication-links {
+  margin-top: 1.5rem;
+}
+
+.publication-links .link-block {
+  margin: 0 0.25rem;
+}
+
+.hero.teaser {
+  padding-top: 0;
+}
+
+.teaser-img,
+.method-img,
+.results-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.teaser .subtitle {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+}
+
+.dnerf {
+  font-variant: small-caps;
+  font-weight: 700;
+  color: #363636;
+}
+
+.section {
+  padding: 2.5rem 1.5rem;
+}
+
+pre {
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  padding: 1.25rem;
+  overflow-x: auto;
+}
+
+.footer {
+  padding: 2.5rem 1.5rem;
+  background-color: #fafafa;
+}
