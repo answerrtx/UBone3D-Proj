@@ -30,5 +30,5 @@ python3 -m http.server 8000   # open http://localhost:8000
 
 ## Deploy
 
-Push to the `UBone3D-page` repo, then **Settings → Pages → Source: `main` / root**.
-The site will be served at `https://answerrtx.github.io/UBone3D-page`.
+Go to the `UBone3D-Proj` repo → **Settings → Pages → Source: `main` / root**.
+The site will be served at `https://answerrtx.github.io/UBone3D-Proj`.
