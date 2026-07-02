@@ -6,7 +6,7 @@
   <meta name="description"
         content="UBone3D: Physics-Rectified Conditional Flow Matching for Anatomical 3D Shape Completion from Ultrasound.">
   <meta name="keywords" content="Ultrasound, Point Cloud Completion, Flow Matching, Bone, Shape Completion, Physics">
-  <meta property="og:title" content="UBone3D: Physics-Rectified Conditional Flow Matching for Anatomical 3D Shape Completion from Ultrasound"/>
+  <meta property="og:title" content="UBone3D: Physics-Rectified Conditional Flow Matching for Anatomical 3D Shape Completion from Ultrasound (Page under construction)"/>
   <meta property="og:description" content="The first framework for anatomical 3D bone shape completion directly from partial ultrasound point clouds, steered at test time by a CT-trained shape prior and a physics-consistency model."/>
   <meta property="og:type" content="website"/>
   <meta name="twitter:card" content="summary_large_image">
@@ -110,20 +110,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Three-dimensional ultrasound (US) is a safe, radiation-free complementary modality to CT
-            and X-rays for longitudinal monitoring, yet its segmentation-derived partial point clouds
-            are extremely artifact-laden. Consequently, it is challenging to reconstruct the 3D bone
-            shape from such US point clouds to a clean and complete anatomical structure. In this
-            paper, we present <b>UBone3D</b>: physics-rectified conditional flow matching (CFM) for
-            ultrasound bone shape completion, the first framework that performs point cloud completion
-            directly from partial US observation. UBone3D models deterministic physics artifacts
-            (e.g., thick surfaces, streaks, dropouts) via a simulated physics proxy, and introduces
-            test-time physics rectification to steer the shape completion. At inference, the
-            completion is jointly steered by two decoupled forces: (1) anatomical plausibility
-            enforced by a CT-trained generative shape prior, <b>BoneFM</b>, and (2) physics
-            consistency enforced by <b>USimNet</b> in the ultrasound formation space. Extensive
-            experiments on simulated and in-vivo data demonstrate significant improvements in
-            reconstruction accuracy and anatomical fidelity over existing baselines.
+            Three-dimensional ultrasound (US) is a safe, radiation-free complementary modality to CT and X-rays for longitudinal monitoring, yet its segmentation-derived partial point clouds are extremely artifact-laden. Consequently, it is challenging to recover a clean and complete anatomical structure from such US point clouds. In this paper, we present UBone3D, a novel framework based on physics-rectified conditional flow matching (CFM) that performs point cloud completion directly from partial US observations. UBone3D models deterministic physics artifacts (e.g., surface thickening, streaking, dropouts) via a simulated physics proxy, and introduces test-time physics rectification to steer the shape completion. At inference, the completion is jointly steered by two decoupled forces: (1) anatomical plausibility enforced by a CT-trained generative shape prior, <b>BoneFM</b>, and (2) physics consistency enforced by <b>USimNet</b> in the ultrasound formation space. Extensive experiments on simulated and in-vivo data demonstrate significant improvements in reconstruction accuracy and anatomical fidelity over existing baselines.
           </p>
         </div>
       </div>
