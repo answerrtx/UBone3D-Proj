@@ -30,6 +30,12 @@ body {
   margin-top: 1.5rem;
 }
 
+/* the teaser line used to sit here; without it the default hero padding
+   leaves too much air between the button row and the first section */
+.hero .hero-body {
+  padding-bottom: 1rem;
+}
+
 .publication-links .link-block {
   margin: 0 0.25rem;
 }
@@ -79,7 +85,7 @@ pre {
 }
 
 .video-wrapper {
-  max-width: 1120px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
