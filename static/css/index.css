@@ -34,34 +34,12 @@ body {
   margin: 0 0.25rem;
 }
 
-.hero.teaser {
-  padding-top: 0;
-}
-
-.hero.teaser .hero-body {
-  padding-top: 0;
-  padding-bottom: 1rem;
-}
-
-.teaser-img,
 .method-img,
 .results-img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-}
-
-.teaser .subtitle {
-  margin-top: 0;
-  font-size: 1.1rem;
-  color: #4a4a4a;
-}
-
-.dnerf {
-  font-variant: small-caps;
-  font-weight: 700;
-  color: #363636;
 }
 
 .section {
@@ -96,7 +74,7 @@ pre {
 }
 
 .video-section {
-  padding-top: 0;
+  padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 
@@ -134,7 +112,6 @@ pre {
   text-align: center;
 }
 
-.method-figure figcaption,
 .result-figure figcaption {
   margin-top: 2.5rem;
   font-size: 0.95rem;
