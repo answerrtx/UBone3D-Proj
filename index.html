@@ -31,6 +31,11 @@
             Anatomical 3D Shape Completion from Ultrasound
           </h1>
 
+          <p class="under-construction">
+            <i class="fas fa-triangle-exclamation"></i>
+            This page is under construction &mdash; content is still being finalized and may change.
+          </p>
+
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="#">Weiying Chen</a><sup>1</sup>,</span>
@@ -51,15 +56,12 @@
             <span class="author-block"><sup>2</sup>ShanghaiTech University, Shanghai, China</span>
           </div>
 
+          <div class="is-size-5 publication-venue">
+            <span class="venue-badge">Accepted by ECCV 2026</span>
+          </div>
+
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- Paper -->
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Paper</span>
-                </a>
-              </span>
               <!-- arXiv -->
               <span class="link-block">
                 <a href="#" class="external-link button is-normal is-rounded is-dark">
@@ -72,13 +74,6 @@
                 <a href="https://github.com/answerrtx/UBone3D" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
-                </a>
-              </span>
-              <!-- Data -->
-              <span class="link-block">
-                <a href="#" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="far fa-images"></i></span>
-                  <span>Data</span>
                 </a>
               </span>
             </div>
@@ -98,6 +93,24 @@
         directly from artifact-laden partial ultrasound point clouds, steered at inference by an
         anatomical shape prior and a physics-consistency model.
       </h2>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VIDEO ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3 has-text-centered">Video</h2>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/DEXxBjymcYU?rel=0"
+                  title="UBone3D overview video"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -149,6 +162,21 @@
             without requiring paired CT supervision at inference.
           </p>
         </div>
+
+        <figure class="image method-figure">
+          <a href="static/images/ubone3d_arc.png" title="Click to view full resolution">
+            <img src="static/images/ubone3d_arc.png" class="method-img"
+               alt="UBone3D overview: a conditional flow matching trajectory from t=0 to t=1 rectified by a BoneFM velocity term and a clipped USimNet gradient, with sub-diagrams for (a) BoneFM training and (b) USimNet training.">
+          </a>
+          <figcaption>
+            <b>Overview of UBone3D.</b> A partial ultrasound point cloud is transported toward a clean,
+            complete anatomy along a conditional flow matching trajectory whose velocity is rectified by
+            the clipped <b>USimNet</b> gradient, gated by a time-dependent weight
+            &lambda;(<i>t</i>) that switches on at <i>t</i><sub>enable</sub>.
+            Insets: (a) <b>BoneFM</b>, the CT-trained generative anatomy prior, and
+            (b) <b>USimNet</b>, the differentiable ultrasound physics proxy &mdash; both trained offline.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -166,23 +194,30 @@
             gains in reconstruction accuracy and anatomical fidelity over existing baselines.
           </p>
         </div>
+
+        <figure class="image result-figure">
+          <a href="static/pdfs/visa.pdf">
+            <img src="static/images/visa.png" class="results-img"
+                 alt="Qualitative comparison on simulated ultrasound point clouds: input, PoinTr, SVDFormer, Gafencu et al.'s, SSM-Net* and UBone3D (ours), with ground truth overlaid in red.">
+          </a>
+          <figcaption>
+            Qualitative comparison on simulated ultrasound point clouds. Ground truth is overlaid in
+            <span class="gt-red">red</span>; UBone3D (rightmost) recovers complete, anatomically
+            faithful vertebrae from severely incomplete inputs.
+          </figcaption>
+        </figure>
+
+        <figure class="image result-figure">
+          <a href="static/pdfs/resb.pdf">
+            <img src="static/images/resb.png" class="results-img"
+                 alt="Qualitative comparison on in-vivo ultrasound point clouds: input, SVDFormer, SSM-Net* and UBone3D (ours).">
+          </a>
+          <figcaption>
+            Qualitative results on in-vivo ultrasound scans, where no ground truth is available.
+          </figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ===================== BIBTEX ===================== -->
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{chen2026ubone3d,
-  title     = {UBone3D: Physics-Rectified Conditional Flow Matching for
-               Anatomical 3D Shape Completion from Ultrasound},
-  author    = {Chen, Weiying and Gao, Yuchong and Li, Siyuan and
-               Reformat, Marek and Zheng, Rui and Lou, Edmond},
-  booktitle = {},
-  year      = {2026}
-}</code></pre>
   </div>
 </section>
 
