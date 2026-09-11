@@ -38,6 +38,11 @@ body {
   padding-top: 0;
 }
 
+.hero.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
+
 .teaser-img,
 .method-img,
 .results-img {
@@ -48,7 +53,7 @@ body {
 }
 
 .teaser .subtitle {
-  margin-top: 1.5rem;
+  margin-top: 0;
   font-size: 1.1rem;
   color: #4a4a4a;
 }
@@ -90,6 +95,16 @@ pre {
   background-color: #f0f5fd;
 }
 
+.video-section {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.video-wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -108,33 +123,29 @@ pre {
   border: 0;
 }
 
-.result-figure {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.result-figure figcaption {
-  margin-top: 0.75rem;
-  font-size: 0.95rem;
-  color: #4a4a4a;
-  text-align: left;
-}
-
 .gt-red {
   color: #d0342c;
   font-weight: 600;
 }
 
-.method-figure {
-  margin-top: 2rem;
+.method-figure,
+.result-figure {
+  margin-top: 2.5rem;
   text-align: center;
 }
 
-.method-figure figcaption {
-  margin-top: 0.75rem;
+.method-figure figcaption,
+.result-figure figcaption {
+  margin-top: 2.5rem;
   font-size: 0.95rem;
   color: #4a4a4a;
   text-align: left;
+}
+
+/* the in-vivo panel is sparser than the simulated one, so it reads better small */
+.is-narrow-figure .results-img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .under-construction {
