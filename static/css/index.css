@@ -18,6 +18,11 @@ body {
   margin: 0 0.35rem;
 }
 
+.affiliations .author-block {
+  display: block;
+  margin: 0;
+}
+
 .publication-links {
   margin-top: 1.5rem;
 }
@@ -129,16 +134,4 @@ pre {
 .is-narrow-figure .results-img {
   width: 80%;
   margin: 0 auto;
-}
-
-.under-construction {
-  margin-top: 0.75rem;
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #8a6d3b;
-}
-
-.under-construction .fas {
-  margin-right: 0.35rem;
-  font-style: normal;
 }

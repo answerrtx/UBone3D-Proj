@@ -36,8 +36,6 @@ null-origin restriction, not a page bug. Preview over HTTP (below) instead.
 
 ## Still to do
 
-- Remove the "under construction" notice under the title, and the
-  `(Page under construction)` suffix in the `og:title` meta tag.
 - Restore a BibTeX section once the official DOI is available.
 
 ## Preview locally
