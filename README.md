@@ -36,8 +36,6 @@ null-origin restriction, not a page bug. Preview over HTTP (below) instead.
 
 ## Still to do
 
-- Fill in the real links in `index.html` (search for `href="#"`): the arXiv
-  button and the author homepages.
 - Remove the "under construction" notice under the title, and the
   `(Page under construction)` suffix in the `og:title` meta tag.
 - Restore a BibTeX section once the official DOI is available.

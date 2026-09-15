@@ -18,14 +18,6 @@ body {
   margin: 0 0.35rem;
 }
 
-.publication-authors a {
-  color: #3273dc;
-}
-
-.publication-authors a:hover {
-  text-decoration: underline;
-}
-
 .publication-links {
   margin-top: 1.5rem;
 }
@@ -34,6 +26,14 @@ body {
    leaves too much air between the button row and the first section */
 .hero .hero-body {
   padding-bottom: 1rem;
+}
+
+.proof-note {
+  max-width: 44rem;
+  margin: 1.25rem auto 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #8c8c8c;
 }
 
 .publication-links .link-block {
